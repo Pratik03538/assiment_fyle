@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+}
+
+.our-project-section {
+    padding: 50px 0;
+}
+
+#image-container {
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    background: #f5f5f5;
+}
+
+#main-image {
+    max-height: 400px; /* Increase the maximum height of the image */
+    max-width: 100%; /* Ensure the image maintains its aspect ratio */
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.content-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item {
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.content-item:hover {
+    background-color: #f1f1f1;
+    transform: translateX(10px);
+}
+
+.content-item.active {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.content-item.active h4,
+.content-item.active p {
+    color: white;
+}
+
+.content-item h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+.content-item p {
+    color: #333;
+}

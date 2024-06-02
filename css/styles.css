@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.hero-section {
+    background: #f4f4f4;
+    padding: 100px 0;
+}
+.hero-section h3{
+    font-size: 1.9rem;
+    color: #ff007a;
+    margin-bottom: 10px; /* Adjust margin if needed */
+}
+
+.hero-section h1,
+.hero-section h3,
+.hero-section p {
+    margin-bottom: 20px;
+}
+
+.hero-section .btn-primary {
+    background-color: #ff007a;
+    border-color: #ff007a;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #e6006f;
+    border-color: #e6006f;
+}
+
+.what-we-do-section {
+    padding: 60px 0;
+    background: #ffffff;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    color: #ff007a;
+    margin-bottom: 10px; /* Adjust margin if needed */
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.slider-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-image-container {
+    position: relative;
+    flex: 1;
+    margin: 0 0.03px; /* Reduced margin for less space between images */
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.2s;
+}
+
+.hover-design {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 122, 0.8);
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.hover-design .btn-transparent {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.slider-image-container:hover .hover-design {
+    display: block;
+    opacity: 1;
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -40px; /* Positioned indicators at the bottom */
+    left: 10px; /* Left aligned indicators */
+    display: flex;
+    justify-content: left;
+    width: auto; /* Adjusted width to fit content */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.carousel-indicators li {
+    background-color: #ff007a;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    animation: blink 1s infinite;
+}
+
+/* @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+} */
+
+@keyframes blink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
